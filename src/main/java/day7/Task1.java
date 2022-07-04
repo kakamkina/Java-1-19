@@ -1,11 +1,11 @@
 package day7;
+import java.lang.reflect.Array;
 
+import static day7.Task1.Airplane.compareAirplanes;
 
 public class Task1 {
     public static void main(String[] args) {
-
-
-
+        compareAirplanes();
     }
 
     static class Airplane {
@@ -18,6 +18,24 @@ public class Task1 {
         int fillUp;
         int n;
 
+        static void compareAirplanes(){
+            Airplane airplane1 = new Airplane();
+            Airplane airplane2 = new Airplane();
+            airplane1.setLength(49);
+            airplane2.setLength(60);
+            int a = airplane1.getLength();
+            int b = airplane2.getLength();
+
+            if(a>b){
+                System.out.println("airplane 1 " + a);
+            }
+            if(b>a)
+                System.out.println("airplane 2 " + b);
+            else{
+                System.out.println("equals");
+            }
+        }
+
         public void setManufacturer(String manufacturer) {
             this.manufacturer = manufacturer;
         }
@@ -28,6 +46,10 @@ public class Task1 {
 
         public void setLength(int length) {
             this.length = length;
+        }
+
+        public int getLength() {
+            return length;
         }
 
         public void setWeight(int weight) {
@@ -51,11 +73,10 @@ public class Task1 {
         public void setFillUp(int n) {
             this.fillUp = fillUp;
             fillUp = fillUp + n;
+
         }
 
         public int getFillUp() {
-    //        fillUp = fillUp + n;
-
             return fillUp;
         }
     }
