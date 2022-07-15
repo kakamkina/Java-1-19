@@ -7,7 +7,7 @@ public class  Task1 {
 
         Scanner s = new Scanner(System.in);
 
-for(int i=0;i>=0; i++){
+for(;;){
     String x = s.nextLine();
         switch(x) {
 
@@ -36,7 +36,7 @@ for(int i=0;i>=0; i++){
                 break;
 
             case "Stop":
-                System.exit(0);
+                break;
 
             default:
                 System.out.println("Неизвестная страна");

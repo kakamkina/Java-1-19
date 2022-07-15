@@ -7,7 +7,7 @@ public class Task3 {
 
         Scanner s = new Scanner(System.in);
         int a = s.nextInt(); a++;
-        int b = s.nextInt(); b--;
+        int b = s.nextInt();
 
 
         if (a>=b){
@@ -15,7 +15,6 @@ public class Task3 {
         }
 
         while (a<b) {
-            a++;
             if(a % 5 == 0 && a % 10 != 0){
                 System.out.print(a + " ");
             }

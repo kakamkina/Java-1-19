@@ -9,16 +9,19 @@ public class Task2 {
         int a = s.nextInt();
         int b = s.nextInt();
 
-        for(int i =a+1; b>i; i++) {
-
-            if(i % 5 == 0 && i % 10 != 0){
-                System.out.print(i + " ");
-            }
+        if (a >= b) {
+            System.out.println("Некорректный ввод");
         }
-                    if (a >= b) {
-                    System.out.println("Некорректный ввод");
+
+        else {
+            for (int i = a + 1; b > i; i++) {
+
+                if (i % 5 == 0 && i % 10 != 0) {
+                    System.out.print(i + " ");
                 }
-
             }
+
         }
+    }
+}
 
