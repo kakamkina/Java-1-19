@@ -22,7 +22,6 @@ class Airplane {
     int weight;
     int fuel;
     int fillUp;
-    int n;
 
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
@@ -51,7 +50,7 @@ class Airplane {
 
     public void info(){
 
-        System.out.println("Изготовитель: "+manufacturer+", год выпуска: "+year+" , длина: "+length+", вес: "+weight+", количество топлива в баке: "+fillUp);
+        System.out.println("РР·РіРѕС‚РѕРІРёС‚РµР»СЊ: "+manufacturer+", РіРѕРґ РІС‹РїСѓСЃРєР°: "+year+" , РґР»РёРЅР°: "+length+", РІРµСЃ: "+weight+", РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРїР»РёРІР° РІ Р±Р°РєРµ: "+fillUp);
 
     }
     public void setFillUp(int n) {
@@ -60,8 +59,6 @@ class Airplane {
     }
 
     public int getFillUp() {
-//        fillUp = fillUp + n;
-
         return fillUp;
     }
 }

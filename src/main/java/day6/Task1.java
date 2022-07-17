@@ -10,11 +10,8 @@ public class Task1 {
         car1.info();
         System.out.println("Model: "+ car1.getModel()+", Color: "+car1.getColor()+", Year of produce: "
                 +car1.getYear()+", Current year: "+car1.getYearDifference()+", Difference: " + car1.getInputYear());
-
-
     }
 }
-
 
 class Car {
     String model;

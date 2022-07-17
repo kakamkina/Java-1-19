@@ -1,4 +1,5 @@
 package day6;
+
 import java.util.Random;
 
 public class Task3 {
@@ -13,7 +14,7 @@ public class Task3 {
     }
 }
 
-class Student{
+class Student {
     static String name;
 
     public void setName(String name) {
@@ -55,7 +56,7 @@ class Teacher extends Student {
     }
 
     public int getEvaluate() {
-        System.out.println("Преподаватель "+name+" оценил студента с именем "+Student.name+" по предмету "+subject+" на оценку "+evaluate+".");
+        System.out.println("Преподаватель " + name + " оценил студента с именем " + Student.name + " по предмету " + subject + " на оценку " + evaluate + ".");
         return evaluate;
 
     }
