@@ -25,14 +25,12 @@ public class Task2 {
         for(int y:arr){
             b = b + y;
 
-            for(int r = y; r%10 ==0;){
+            if(y%10 ==0){
                 b++;
-                break;
             }
 
-            for(int r = y; r%10 ==0;){
+            if(y%10 ==0){
                 a++;
-                break;
             }
         }
         System.out.println("Наибольший элемент массива: " + largest);

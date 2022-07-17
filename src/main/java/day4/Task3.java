@@ -19,27 +19,20 @@ public class Task3 {
             System.out.println();
         }
 
-        int a;
-//        int[] sumArr = new int[12]; //
-
         int sum = 0;
-        for (a = 0; a < 12; a++) {
+        int rowIndex = 0;
+        int biggestNumber = 0;
+        for (int a = 0; a < 12; a++) {
             sum = 0;
             for (int j = 0; j < 8; j++) {
-               sum = sum + arr[a][j];
-//                sumArr[sum] = in.nextInt(); //
-
-//                for(int k =0; k< sumArr.length; k++) {
-//                    Arrays.fill(sumArr, sum);
-//                }
+                sum = sum + arr[a][j];
             }
-            System.out.print(" " + sum);
+            if (sum > biggestNumber) {
+                biggestNumber = sum;
+                rowIndex++;
+            }
+//            System.out.print(" " + biggestNumber);
         }
-
-//        int max = Arrays.stream(sum).max().getAsInt();
-//        System.out.println("max " + max);
-//        for (int i = 0; i < sum.length; i++) {
-//            System.out.print(sumArr[i] + " ");
-//        }
+        System.out.println("Индекс строки, сумма чисел в которой максимальна = "+rowIndex+".");
     }
 }

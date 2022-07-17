@@ -7,46 +7,46 @@ public class Task1 {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        int x = s.nextInt();
-        int[] numbers = new int[x];
+        int inputNumber = s.nextInt();
+        int[] numbers = new int[inputNumber];
         Random random = new Random();
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = random.nextInt(10);
             System.out.println(numbers[i]);
         }
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        int d = 0;
-        int e = 0;
+        int length = 0;
+        int equalsOne = 0;
+        int even = 0;
+        int odd = 0;
+        int sum = 0;
         for (int y : numbers) {
-            e = e + y;
+            sum = sum + y;
 
-            for (int r = y; y > 8;) {
-                a++;
+            if(y > 8) {
+                length++;
                 break;
             }
-            for (int r = y; y==1;){
-                b++;
+            if(y==1){
+                equalsOne++;
                 break;
             }
-            for (int r = y; y%2==0;){
-                c++;
+            if(y%2==0){
+                even++;
                 break;
             }
-            for (int r = y; y%2!=0;){
-                d++;
+            if(y%2!=0){
+                odd++;
                 break;
             }
         }
 
         System.out.println("Информация о массиве:");
-        System.out.println("Длина массива: " + x);
-        System.out.println("Количество чисел больше 8: " + a);
-        System.out.println("Количество чисел равных 1: " + b);
-        System.out.println("Количество четных чисел: " + c);
-        System.out.println("Количество нечетных чисел: " + d);
-        System.out.println("Сумма всех элементов массива: " + e);
+        System.out.println("Длина массива: " + inputNumber);
+        System.out.println("Количество чисел больше 8: " + length);
+        System.out.println("Количество чисел равных 1: " + equalsOne);
+        System.out.println("Количество четных чисел: " + even);
+        System.out.println("Количество нечетных чисел: " + odd);
+        System.out.println("Сумма всех элементов массива: " + sum);
 
     }
 

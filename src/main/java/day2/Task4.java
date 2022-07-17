@@ -12,16 +12,17 @@ public class Task4 {
 
         Scanner s = new Scanner(System.in);
         double x = s.nextDouble();
+        double y;
 
         if(x >= 5){
-            double y = (pow(x,2)-10)/(x+7);
+            y = (pow(x, 2) - 10) / (x + 7);
         }
         else if(-3 < x && x < 5){
-            double y = (x+3)*(pow(x,2)-2);
+            y = (x+3)*(pow(x,2)-2);
         }
         else{
-           double y = 420;
+            y = 420;
         }
-//        System.out.println(y);
+        System.out.println(y);
     }
 }

@@ -14,9 +14,9 @@ public class Task1 {
     }
     }
        class Car {
-            String model;
-            String color;
-            int year;
+            private String model;
+            private String color;
+            private int year;
 
             public void setModel(String userModel) {
                 model = userModel;

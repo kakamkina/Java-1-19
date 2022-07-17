@@ -16,11 +16,11 @@ public class Task3 {
                 System.out.println("Деление на 0");
             }
 
-            double result = a/b;
-            System.out.println(result);
-            continue;
-
-
+            else {
+                double result = a / b;
+                System.out.println(result);
+                continue;
+            }
         }
 
     }
