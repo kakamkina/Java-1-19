@@ -1,5 +1,4 @@
 package day7;
-import java.lang.reflect.Array;
 
 import static day7.Task1.Airplane.compareAirplanes;
 
@@ -16,9 +15,8 @@ public class Task1 {
         int weight;
         int fuel;
         int fillUp;
-        int n;
 
-        static void compareAirplanes(){
+        static void compareAirplanes() {
             Airplane airplane1 = new Airplane();
             Airplane airplane2 = new Airplane();
             airplane1.setLength(49);
@@ -26,13 +24,13 @@ public class Task1 {
             int a = airplane1.getLength();
             int b = airplane2.getLength();
 
-            if(a>b){
-                System.out.println("airplane 1 " + a);
+            if (a > b) {
+                System.out.println("Airplane 1 is longer (" + a + "cm)");
             }
-            if(b>a)
-                System.out.println("airplane 2 " + b);
-            else{
-                System.out.println("equals");
+            if (b > a)
+                System.out.println("Airplane 2 is longer (" + b + "cm)");
+            else {
+                System.out.println("Equals");
             }
         }
 
@@ -65,11 +63,12 @@ public class Task1 {
             return fuel;
         }
 
-        public void info(){
+        public void info() {
 
-            System.out.println("Èçãîòîâèòåëü: "+manufacturer+", ãîä âûïóñêà: "+year+" , äëèíà: "+length+", âåñ: "+weight+", êîëè÷åñòâî òîïëèâà â áàêå: "+fillUp);
+            System.out.println("Изготовитель:: " + manufacturer + ", год выпуска: " + year + " , длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fillUp);
 
         }
+
         public void setFillUp(int n) {
             this.fillUp = fillUp;
             fillUp = fillUp + n;
