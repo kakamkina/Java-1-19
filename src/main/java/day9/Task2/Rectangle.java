@@ -6,12 +6,14 @@ public class Rectangle extends Figure {
 
     @Override
     public double area() {
-        return 0;
+        double area = height*width;
+        return area;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        double perimeter = 2*(height+width);
+        return perimeter;
     }
 
     public Rectangle (int width, int height, String color){

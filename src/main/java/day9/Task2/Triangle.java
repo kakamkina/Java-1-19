@@ -1,24 +1,27 @@
 package day9.Task2;
 
 public class Triangle extends Figure {
-    int length1;
-    int length2;
-    int length3;
+    int lengthA;
+    int lengthB;
+    int lengthC;
 
     @Override
     public double area() {
-        return 0;
+        double spTriangle = (lengthA+lengthB+lengthC)/2;
+        double area = Math.sqrt(spTriangle*(spTriangle-lengthA)*(spTriangle-lengthB)*(spTriangle-lengthC));
+        return area;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        double perimeter = lengthA+lengthB+lengthC;
+        return perimeter;
     }
 
-    public Triangle (int length1, int length2, int length3, String color){
-        this.length1 = length1;
-        this.length2 = length2;
-        this.length3 = length3;
+    public Triangle (int lengthA, int lengthB, int lengthC, String color){
+        this.lengthA = lengthA;
+        this.lengthB = lengthB;
+        this.lengthC = lengthC;
         this.color = color;
     }
 

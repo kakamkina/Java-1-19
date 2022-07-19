@@ -1,8 +1,8 @@
 package day9.Task2;
 
 public abstract class Figure {
-
-    public String color;
+    public static String color;
+    public static double perimeter;
 
     public void color(String color) {
         this.color = color;

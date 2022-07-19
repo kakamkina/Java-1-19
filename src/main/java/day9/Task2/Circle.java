@@ -11,7 +11,8 @@ public class Circle extends Figure {
 
     @Override
     public double perimeter() {
-        return 0;
+        double perimeter = 2*Math.PI*circleRadius;
+        return perimeter;
     }
 
     public Circle (int circleRadius, String color){
