@@ -1,9 +1,10 @@
 package day9.Task2;
 
 public class Triangle extends Figure {
-    int lengthA;
-    int lengthB;
-    int lengthC;
+    double lengthA;
+    double lengthB;
+    double lengthC;
+//    String color;
 
     @Override
     public double area() {
@@ -18,11 +19,11 @@ public class Triangle extends Figure {
         return perimeter;
     }
 
-    public Triangle (int lengthA, int lengthB, int lengthC, String color){
+    public Triangle (String color, int lengthA, int lengthB, int lengthC){
+        super(color);
         this.lengthA = lengthA;
         this.lengthB = lengthB;
         this.lengthC = lengthC;
-        this.color = color;
     }
 
 

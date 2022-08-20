@@ -1,8 +1,9 @@
 package day9.Task2;
 
 public class Rectangle extends Figure {
-    int width;
-    int height;
+    double width;
+    double height;
+//    String color;
 
     @Override
     public double area() {
@@ -16,10 +17,12 @@ public class Rectangle extends Figure {
         return perimeter;
     }
 
-    public Rectangle (int width, int height, String color){
+    public Rectangle (String color, int width, int height){
+        super(color);
         this.width = width;
         this.height = height;
-        this.color = color;
+
+
     }
 
 }

@@ -1,7 +1,8 @@
 package day9.Task2;
 
 public class Circle extends Figure {
-    int circleRadius;
+    double circleRadius;
+//    String color;
 
     @Override
     public double area() {
@@ -15,9 +16,9 @@ public class Circle extends Figure {
         return perimeter;
     }
 
-    public Circle (int circleRadius, String color){
+    public Circle (String color, int circleRadius){
+        super(color);
         this.circleRadius = circleRadius;
-        this.color = color;
     }
 }
 
